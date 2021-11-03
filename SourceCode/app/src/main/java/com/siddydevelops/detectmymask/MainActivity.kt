@@ -205,7 +205,14 @@ class MainActivity : AppCompatActivity() {
         lifecycleScope.launch(Dispatchers.Main){
             output.firstOrNull()?.let {
                 category ->
-                textViewOutput.text = category.label
+                //textViewOutput.text = category.label
+                if(category.label == "without_mask")
+                {
+                    textViewOutput.setText(getString(R.string.without_mask))
+                }
+                else {
+                    textViewOutput.setText(getString(R.string.with_mask))
+                }
                 textViewOutput.setTextColor(ContextCompat.getColor(applicationContext, if(category.label == "without_mask") R.color.red else R.color.green))
                 overlay.background = getDrawable(
                     if(category.label == "without_mask") R.drawable.red_border else R.drawable.green_border

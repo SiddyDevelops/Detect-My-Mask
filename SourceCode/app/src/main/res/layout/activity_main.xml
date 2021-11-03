@@ -11,16 +11,33 @@
         android:layout_height="match_parent"
         android:id="@+id/previewView"/>
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
+<!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--        android:id="@+id/btnCameraFace"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginBottom="55dp"-->
+<!--        android:contentDescription="@null"-->
+<!--        android:elevation="8dp"-->
+<!--        android:scaleType="center"-->
+<!--        android:backgroundTint="@color/white"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        android:src="@drawable/ic_baseline_camera_rear_24"/>-->
+
+    <ImageButton
         android:id="@+id/btnCameraFace"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
         android:layout_marginBottom="55dp"
+        android:background="@drawable/ripple_oval"
+        android:elevation="8dp"
+        android:scaleType="center"
         android:contentDescription="@null"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:src="@drawable/ic_baseline_camera_rear_24"/>
+        android:src="@drawable/ic_baseline_camera_rear_24" />
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -35,6 +52,8 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="25sp"
             android:id="@+id/textViewOutput"/>
 
         <ProgressBar

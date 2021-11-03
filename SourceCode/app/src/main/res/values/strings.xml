@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Detect My Mask</string>
+    <string name="with_mask">Mask is Detected</string>
+    <string name="without_mask">Mask is NOT Detected</string>
 </resources>
