@@ -20,6 +20,10 @@ Detect My Mask is an Android Application which is powered by a TensorLite ML Mod
 
 ## Demonstration :
 
+<div align="center">  
+  <img height="500px" src="https://user-images.githubusercontent.com/72121163/140027102-f1bfc547-8818-4ae9-90a5-52a9df07b10d.gif" />
+</div>
+
 ---
 
 ## From the Developer :
